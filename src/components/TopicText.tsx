@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import imageLoader from "../loader";
 
 type TopicTextProps = {
   title: string;
@@ -15,7 +14,6 @@ export function TopicText(props: TopicTextProps) {
         alt={"Icone de confere"}
         width={38}
         height={32}
-        loader={imageLoader}
         className={"object-contain w-19 h-16"}
         unoptimized
       />

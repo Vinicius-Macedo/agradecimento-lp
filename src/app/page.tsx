@@ -38,7 +38,10 @@ export default function Home() {
         </div>
       </header>
       <main>
-        <DefaultMarginSection  className="lg:grid lg:grid-cols-2" hasNoEffect={true}>
+        <DefaultMarginSection
+          className="lg:grid lg:grid-cols-2"
+          hasNoEffect={true}
+        >
           <Image
             src={"/fundo-capa.jpg"}
             alt={""}
@@ -141,7 +144,7 @@ export default function Home() {
             </div>
           </div>
         </DefaultMarginSection>
-        <DefaultMarginSection hasNoEffect={true}
+        <DefaultMarginSection
           hasNoEffect={true}
           styles={{ backgroundImage: "url('/hero-background.webp')" }}
           containerClassName={"bg-cover bg-no-repeat overflow-x-hidden"}
@@ -184,7 +187,7 @@ export default function Home() {
             height={80}
           />
         </DefaultMarginSection>
-        <DefaultMarginSection hasNoEffect={true}
+        <DefaultMarginSection
           hasNoEffect={true}
           containerClassName={"bg-cover bg-no-repeat"}
           styles={{
@@ -239,7 +242,10 @@ export default function Home() {
             </div>
           </div>
         </DefaultMarginSection>
-        <DefaultMarginSection hasNoEffect={true} containerClassName="bg-[#FFA500]">
+        <DefaultMarginSection
+          hasNoEffect={true}
+          containerClassName="bg-[#FFA500]"
+        >
           <div className="flex flex-col gap-4 items-center">
             <p className="text">a oferta acaba em:</p>
             <p className="title font-bold">Termina em 7 dias</p>

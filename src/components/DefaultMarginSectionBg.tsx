@@ -1,6 +1,5 @@
 import Image, { StaticImageData } from "next/image";
 import { ReactNode } from "react";
-import imgLoader from "../loader";
 
 type DefaultMarginSectionProps = {
   children: ReactNode;
@@ -37,7 +36,6 @@ export function DefaultMarginSectionBg(props: DefaultMarginSectionProps) {
           <Image
             src={props.imgAdress}
             alt={props.imgAlt}
-            loader={imgLoader}
             unoptimized={true}
             style={{ zIndex: -1, objectFit: "cover", objectPosition: "center" }}
             fill
