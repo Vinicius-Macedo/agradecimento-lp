@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+// CORE
+@import "core/breakpoints";
+@import "core/colors";
+@import "core/typography";
+@import "core/utilities";
+
+// PARTIALS
+@import "partials/header";
+@import "partials/footer";
+
+body {
+  @apply text-black;
+}
+
+.title {
+  @apply text-[1.75rem] sm:text-[2rem] lg:text-[3.2363rem];
+}
+
+.semi-title {
+  @apply text-[1.4063rem] lg:text-[2rem];
+}
+
+.text {
+  @apply text-[1.125rem] lg:text-[1.3906rem];
+}
+
+.circle-decoration {
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    #1d1900 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  border-radius: 10000px;
+}
+
+.circle-decoration-active {
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    #6e6201 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  border-radius: 10000px;
+}
+
+.background-image-default {
+  background: center no-repeat;
+  background-size: cover;
+  background-image: url("/img/background-image.webp");
+}
+
+* {
+  z-index: 2;
+}
+
+* {
+  scrollbar-width: 4px;
+  scrollbar-color: #ffa500 #a6ff00;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 4px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #ffa500;
+  border-radius: 999px;
+}
+
+.element {
+  position: relative;
+  transform: translateY(50px);
+  opacity: 0;
+  transition: 1s all ease-in-out;
+}
+
+.element.is-visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.class {
+  font-size: 2.25rem;
+}
