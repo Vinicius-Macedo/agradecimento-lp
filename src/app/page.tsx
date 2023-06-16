@@ -119,28 +119,37 @@ export default function Home() {
             </div>
           </div>
         </DefaultMarginSection>
-        <DefaultMarginSection hasNoEffect={true}>
-          <p className="semi-title text-[#FFA500] text-center font-bold">
-            DE R$ 29,90 POR MÊS POR R$ 11,60
-          </p>
-          <div className="flex flex-col lg:flex-row gap-8 justify-center items-center">
-            <p className="text-white semi-title font-bold w-auto">
-              <span className="title">60%</span>
-              DE <br />
-              DESCONTO
+        <DefaultMarginSection
+          hasNoEffect={true}
+          hasNoMarginBottom
+          hasNoMarginTop
+        >
+          <div className="lg:py-16">
+            <p className="semi-title text-[#FFA500] text-center font-bold">
+              DE R$ 29,90 POR MÊS POR R$ 11,60
             </p>
-            <div>
-              <p className="semi-title font-bold text-white text-center">
-                VAGAS
-                <br />
-                LIMITADAS
-              </p>
-              <a
-                className="bg-[#FFA500] font-bold text-center text-[18px] px-8 py-4 rounded block max-w-[250px]"
-                href="https://pay.hotmart.com/A78289712N?bid=1677160401379"
-              >
-                QUERO ASSINAR AGORA
-              </a>
+            <div className="flex flex-col gap-8 justify-center items-center">
+              <div className="flex gap-8 items-end lg:gap-16">
+                <p className="text-white semi-title font-bold w-auto">
+                  <span className="title">60%</span>
+                  DE <br />
+                  DESCONTO
+                </p>
+                <p className="semi-title font-bold text-white text-center">
+                  VAGAS
+                  <br />
+                  LIMITADAS
+                </p>
+              </div>
+
+              <div>
+                <a
+                  className="bg-[#FFA500] font-bold text-center text-[18px] px-8 py-4 rounded block max-w-[250px]"
+                  href="https://pay.hotmart.com/A78289712N?bid=1677160401379"
+                >
+                  QUERO ASSINAR AGORA
+                </a>
+              </div>
             </div>
           </div>
         </DefaultMarginSection>
@@ -245,13 +254,15 @@ export default function Home() {
         <DefaultMarginSection
           hasNoEffect={true}
           containerClassName="bg-[#FFA500]"
+          hasNoMarginTop
+          hasNoMarginBottom
         >
-          <div className="flex flex-col gap-4 items-center">
+          <div className="flex flex-col gap-4 items-center lg:py-16">
             <p className="text">a oferta acaba em:</p>
             <p className="title font-bold">Termina em 7 dias</p>
             <a
               href="https://pay.hotmart.com/A78289712N?bid=1677160401379"
-              className="text-[22px] border-2 border-solid border-dark px-12 py-6 font-bold rounded-full"
+              className="text-[16px] text-center sm:text-[22px] border-2 border-solid border-dark px-6 sm:px-12 py-6 font-bold rounded-full"
             >
               GARANTIR MEU ACESSO COM DESCONTO!
             </a>
