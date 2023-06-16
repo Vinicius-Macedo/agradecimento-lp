@@ -124,12 +124,12 @@ export default function Home() {
           hasNoMarginBottom
           hasNoMarginTop
         >
-          <div className="lg:py-16">
-            <p className="semi-title text-[#FFA500] text-center font-bold">
+          <div className="lg:py-16 lg:flex lg:flex-col lg:gap-24 lg:items-center">
+            <p className="title text-[#FFA500] text-center font-bold max-w-[460px]">
               DE R$ 29,90 POR MÊS POR R$ 11,60
             </p>
-            <div className="flex flex-col gap-8 justify-center items-center">
-              <div className="flex gap-8 items-end lg:gap-24">
+            <div className="flex flex-col gap-8 lg:gap-24 justify-center items-center">
+              <div className="flex gap-8 items-end lg:gap-16">
                 <p className="text-white semi-title font-bold w-auto">
                   <span className="title">60%</span>
                   DE <br />
@@ -144,7 +144,7 @@ export default function Home() {
 
               <div>
                 <a
-                  className="bg-[#FFA500] font-bold text-center text-[18px] px-8 py-4 rounded block max-w-[250px]"
+                  className="bg-[#FFA500] font-bold text-center semi-title px-8 py-4 rounded block max-w-[500px]"
                   href="https://pay.hotmart.com/A78289712N?bid=1677160401379"
                 >
                   QUERO ASSINAR AGORA
