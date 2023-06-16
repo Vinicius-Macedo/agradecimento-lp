@@ -129,7 +129,7 @@ export default function Home() {
               DE R$ 29,90 POR MÊS POR R$ 11,60
             </p>
             <div className="flex flex-col gap-8 justify-center items-center">
-              <div className="flex gap-8 items-end lg:gap-16">
+              <div className="flex gap-8 items-end lg:gap-24">
                 <p className="text-white semi-title font-bold w-auto">
                   <span className="title">60%</span>
                   DE <br />
